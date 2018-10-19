@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="./add_students.html" method="POST">
+    {% csrf_token %}
+<table border="1">
+    <thead>
+        <tr>
+            <th>1.id</th>
+            <th>2.姓名</th>
+            <th>3.年龄</th>
+            <th>4.性别</th>
+            <th>5.班级</th>
+            <th>6.电话</th>
+            <th>/</th>
+
+        </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td><input type="text" name="id" /></td>
+        <td><input type="text" name="name"/></td>
+        <td><input type="text" name="age"/></td>
+        <td><input type="text" name="gender"/></td>
+        <td><input type="text" name="cs_id"/></td>
+        <th><input type="text" nmae="tell"/></th>
+        <td><input type="submit" name="提交" /></td>
+    </tr>
+    </tbody>
+
+</table>
+</form>
+
+
+
+
+</body>
+</html>

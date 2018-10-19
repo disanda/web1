@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form action="app_spider.html" method="POST">
+    {% csrf_token %}
+<table border="1">
+    <thead>
+        <tr>
+            <th>网页</th>
+            <th>/</th>
+            <th>结果</th>
+
+        </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td><input type="text" name="weba" /></td>
+        <td><input type="submit" name="提交" /></td>
+        <td><input type="text" name="web" />{{ web }}</td>
+    </tr>
+    </tbody>
+
+</table>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <a href="./add_students.html">添加</a>
+</div>
+<div>
+    <table border="1">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>姓名</th>
+            <th>年龄</th>
+            <th>性别</th>
+            <th>班级</th>
+            <th>电话</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for row in stu_list %}
+            <tr>
+                <td>{{ row.id }}</td>
+                <td>{{ row.username }}</td>
+                <th>{{ row.age }}</th>
+                <th>{{ row.gender }}</th>
+                <th>{{ row.cs_id }}</th>
+                <th>{{ row.tel }}</th>
+                <td>
+                    <a href="./del_classes.html?nid={{ row.id }}">删除</a>
+                    |
+                    <a href="./edit_students.html?nid={{ row.id }}">编辑</a>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
